@@ -53,3 +53,23 @@ a {
 .avatar {
   border-radius: 50%;
 }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 4fr;
+  height: 100%;
+}
+
+.header {
+  background-color: var(--raisin-black);
+}
+
+.sidebar {
+  background-color: var(--eerie-black);
+  grid-row: 1 / -1;
+}
+
+.main-content {
+  background-color: var(--charleston-green);
+}
