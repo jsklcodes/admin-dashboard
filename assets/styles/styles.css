@@ -7,6 +7,7 @@
   --charleston-green: hsl(273, 11%, 16%);
   --heliotrope-gray: hsl(272, 9%, 63%);
   --bright-gray: hsl(0, 0%, 92%);
+  --medium-slate-blue: hsl(249, 86%, 67%);
 
   font-size: 62.5%;
 }
@@ -39,6 +40,7 @@ button {
   border: none;
   border-radius: 1.6rem;
   padding: 0.5rem 1.2rem;
+  outline: none;
 }
 
 ul {
@@ -61,8 +63,79 @@ a {
   height: 100%;
 }
 
+/* ==== header ==== */
 .header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   background-color: var(--raisin-black);
+  padding: 2rem 3.2rem;
+  row-gap: 3.2rem;
+}
+
+.search-bar {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: start;
+  gap: 1.6rem;
+}
+
+.search-bar i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.search-bar input {
+  background-color: var(--charleston-green);
+  color: var(--heliotrope-gray);
+  width: 48rem;
+}
+
+.user-info {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1.6rem;
+  justify-self: end;
+  cursor: pointer;
+}
+
+.user-info i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.greetings {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: start;
+  gap: 1.6rem;
+}
+
+.greetings div {
+  display: grid;
+}
+
+.greetings div span:first-child {
+  color: var(--bright-gray);
+  font-weight: 600;
+}
+
+.buttons {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1.6rem;
+  align-items: center;
+  justify-content: end;
+}
+
+.button {
+  background-color: var(--medium-slate-blue);
+  color: var(--bright-gray);
+  cursor: pointer;
 }
 
 /* ==== sidebar ==== */
