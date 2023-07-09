@@ -1,0 +1,47 @@
+/* ==== base styles ==== */
+:root {
+  --box-shadow: hsla(0, 0%, 0%, 0.04) 0 0.3rem 0.5rem;
+
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+input,
+button {
+  appearance: none;
+  font: inherit;
+  border: none;
+  border-radius: 1.6rem;
+  padding: 0.5rem 1.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ==== general styles ==== */
+.avatar {
+  border-radius: 50%;
+}
