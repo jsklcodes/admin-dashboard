@@ -65,9 +65,61 @@ a {
   background-color: var(--raisin-black);
 }
 
+/* ==== sidebar ==== */
 .sidebar {
   background-color: var(--eerie-black);
   grid-row: 1 / -1;
+
+  padding: 2rem;
+}
+
+.sidebar__header {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 3.2rem;
+  color: var(--bright-gray);
+}
+
+.sidebar__header i {
+  font-size: 3.2rem;
+}
+
+.sidebar__header span {
+  font-weight: 600;
+}
+
+.navigation {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.navigation__item {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: center;
+  gap: 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.navigation__item:hover {
+  color: var(--bright-gray);
+  transition: color 0.3s ease;
+}
+
+.navigation__item:nth-child(6) {
+  margin-bottom: 2.4rem;
+}
+
+.navigation__item i {
+  font-size: 2rem;
+}
+
+.navigation__item a {
+  color: currentColor;
 }
 
 .main-content {
