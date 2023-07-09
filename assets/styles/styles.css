@@ -2,6 +2,12 @@
 :root {
   --box-shadow: hsla(0, 0%, 0%, 0.04) 0 0.3rem 0.5rem;
 
+  --eerie-black: hsl(266, 11%, 12%);
+  --raisin-black: hsl(263, 11%, 14%);
+  --charleston-green: hsl(273, 11%, 16%);
+  --heliotrope-gray: hsl(272, 9%, 63%);
+  --bright-gray: hsl(0, 0%, 92%);
+
   font-size: 62.5%;
 }
 
@@ -22,6 +28,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
+
+  color: var(--heliotrope-gray);
 }
 
 input,
