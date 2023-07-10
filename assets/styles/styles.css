@@ -1,7 +1,5 @@
 /* ==== base styles ==== */
 :root {
-  --box-shadow: hsla(0, 0%, 0%, 0.04) 0 0.3rem 0.5rem;
-
   --eerie-black: hsl(266, 11%, 12%);
   --raisin-black: hsl(263, 11%, 14%);
   --charleston-green: hsl(273, 11%, 16%);
@@ -51,6 +49,14 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
+h2, h3 {
+  color: var(--bright-gray);
+}
+
 /* ==== general styles ==== */
 .avatar {
   border-radius: 50%;
@@ -58,7 +64,7 @@ a {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 4fr;
   height: 100%;
 }
@@ -195,6 +201,121 @@ a {
   color: currentColor;
 }
 
+/* ==== main-content ==== */
 .main-content {
+  display: grid;
+  grid-template-columns: 2.4fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.6rem;
   background-color: var(--charleston-green);
+  padding: 2rem 3.2rem;
+  align-items: start;
+  justify-content: start;
+}
+
+.main-content h2 {
+  margin-bottom: 1.6rem;
+}
+
+.projects {
+  grid-row: 1 / -1;
+}
+
+.projects__group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: 1.6rem;
+}
+
+.project-card {
+  display: grid;
+  gap: 1.6rem;
+  background-color: var(--raisin-black);
+  padding: 2rem;
+  border-radius: 1rem;
+
+  border-left: 0.8rem solid var(--medium-slate-blue);
+}
+
+.project-card__title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.project-card__description {
+  font-size: 1.5rem;
+}
+
+.project-card__footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.action-bar {
+  display: flex;
+  gap: 1.6rem;
+  grid-column: 2 / 3;
+  justify-self: center;
+}
+
+.action-bar__item {
+  text-decoration: none;
+  color: currentcolor;
+}
+
+.action-bar__item i {
+  font-size: 2rem;
+}
+
+.announcement-card {
+  display: grid;
+  gap: 1.6rem;
+  background-color: var(--raisin-black);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.announcement-item:not(:last-child) {
+  border-bottom: 0.1rem solid var(--charleston-green);
+  padding-bottom: 2rem;
+}
+
+.announcement-item__title {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: var(--bright-gray);
+}
+
+.announcement-item__text {
+  font-size: 1.5rem;
+}
+
+.trending-card {
+  display: grid;
+  gap: 1.6rem;
+  background-color: var(--raisin-black);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.trending-card__item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.trending-card__info {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.trending-card__info-user {
+  font-weight: 600;
+  color: var(--bright-gray);
+}
+
+.trending-card__info-project {
+  font-size: 1.5rem;
 }
